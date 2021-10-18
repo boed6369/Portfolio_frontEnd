@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Redirect } from "react-router";
 
 function Projects(props) {
   // create state to hold projects
@@ -17,12 +18,14 @@ function Projects(props) {
   // make an initial call for the data inside a useEffect, so it only happens once on component load
   useEffect(() => getProjectsData(), []);
 
+// syling 
+
   // define a function that will return the JSX needed once we get the data
   const loaded = () => {
     return projects.map((project) => (
       <div>
-        <h1>{project.name}</h1>
-        <img src={project.image} />
+        <h3>{project.name}</h3>
+        <img src={project.image} /><br></br>
         <a href={project.git}>
           <button>Github</button>
         </a>
