@@ -22,7 +22,7 @@ function About(props) {
     <div>
       <h2>{about.name}</h2>
       <h3>{about.email}</h3>
-      <p>{about.bio}</p>
+      <p>I am Bobby, a Full Stack developer with a strong work ethic and a passion for learning. I am new to the software engineering field and I can not wait to learn as much as I can. My main strengths are staying cool under pressure and working hard. The best example I can give is that I finished a 3 month immersive software engineering course, while working full time. It came out to around 100 hours a week of work/study. I cant wait to show you my dedication instead of simply saying it. If you are interested please feel free to contact me.</p>
     </div>
   );
 

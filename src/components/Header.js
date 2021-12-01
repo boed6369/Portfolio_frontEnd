@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 function Header(props) {
   //inline style for the nav tag
   const navStyle = {
@@ -9,12 +10,13 @@ function Header(props) {
     padding: "8px",
     width: "90%",
     margin: "auto",
+    textDecoration:"none",
   };
 
   return (
     <header>
       <h1>Bobby's Portfolio Page</h1>
-      <nav style={navStyle}>
+      <nav className="nav" style={navStyle}>
         <Link to="/">
           <div>HOME</div>
         </Link>
